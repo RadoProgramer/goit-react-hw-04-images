@@ -4,7 +4,10 @@ import './ImageGalleryItem.css';
 
 function ImageGalleryItem({ webformatURL, largeImageURL, onImageClick }) {
   return (
-    <li className="ImageGalleryItem" onClick={() => onImageClick(largeImageURL)}>
+    <li
+      className="ImageGalleryItem"
+      onClick={() => onImageClick(largeImageURL)}
+    >
       <img src={webformatURL} alt="" className="ImageGalleryItem-image" />
     </li>
   );
